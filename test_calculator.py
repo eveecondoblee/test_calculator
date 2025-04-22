@@ -4,6 +4,7 @@ from calculator import subtract
 from calculator import multiply
 from calculator import divide
 from calculator import square
+from calculator import exponential
 
 def test_add():
   assert add(2, 3) == 5
@@ -28,3 +29,7 @@ def test_divide_by_zero():
 def test_square():
   assert abs(square(2) - 1.4142) < 0.001  # √2 ≈ 1.4142
   assert abs(square(9) - 3.0) < 0.001
+
+def test_exponential():
+  assert abs(exponential(1) - 2.718) < 0.001  # e^1 ≈ 2.718
+  assert abs(exponential(0) - 1.0) < 0.001
