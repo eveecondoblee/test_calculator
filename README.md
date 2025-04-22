@@ -1,4 +1,4 @@
-# Calculadore en Python
+# Calculadora en Python
 
 Este proyecto es una simple calculadora en **Python** que permite realizar operaciones matemáticas básicas como suma, resta, multiplicación, división, raíz cuadrada y exponencial.
 De igual manera cuenta con un conjunto de pruebas unitarias para verificar el correcto funcionamiento de las operaciones, dichas pruebas se realizaron con **pytest**.
