@@ -3,6 +3,7 @@ from calculator import add
 from calculator import subtract
 from calculator import multiply
 from calculator import divide
+from calculator import square
 
 def test_add():
   assert add(2, 3) == 5
@@ -23,3 +24,7 @@ def test_divide():
 def test_divide_by_zero():
   with pytest.raises(ValueError):
     divide(5, 0)
+
+def test_square():
+  assert abs(square(2) - 1.4142) < 0.001  # √2 ≈ 1.4142
+  assert abs(square(9) - 3.0) < 0.001
